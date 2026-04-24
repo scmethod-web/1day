@@ -242,7 +242,7 @@ h1, h2, h3, h4 {
 
 /* Quick Entry CTA Group */
 .quick-entry {
-    margin-top: -80px;
+    margin-top: -20px;
     position: relative;
     z-index: 10;
     padding-bottom: 60px;
