@@ -970,7 +970,8 @@ h1, h2, h3, h4 {
     }
 
     .hero-main-copy {
-        font-size: 2.5rem;}
+        font-size: 2.5rem;
+    }
     .split-paths {
     flex-direction: column;
 }}
