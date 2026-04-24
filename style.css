@@ -976,7 +976,7 @@ h1, h2, h3, h4 {
     /* ★ スマホ: 画像の下部白い余白を隠す（高さをより小さく設定） */
     .teacher-image-container {
         width: 280px;
-        height: 290px;
+        height: 260px;
     }
 
     .cta-group {
