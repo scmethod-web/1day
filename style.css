@@ -971,7 +971,9 @@ h1, h2, h3, h4 {
 
     .hero-main-copy {
         font-size: 2.5rem;
-    }
+    .split-paths {
+    flex-direction: column;
+}}
 
     /* ★ スマホ: 画像の下部白い余白を隠す（高さをより小さく設定） */
     .teacher-image-container {
