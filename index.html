@@ -58,7 +58,7 @@
             <div class="theme-box">
                 <p class="theme-label">今月のテーマ</p>
                 <h2 class="theme-title">SCメソッド カウンセリング編 Vol.1「魂」</h2>
-                <p class="theme-desc">答えは、あなたのなかにある<br>魂の声を聴き、悩みを解決する５つのカウンセリングスキル</p>
+                <p class="theme-desc"><span class="nb">答えは、</span><span class="nb">あなたのなかにある</span><br><span class="nb">魂の声を聴き、</span><span class="nb">悩みを解決する</span><span class="nb">５つのカウンセリングスキル</span></p>
             </div>
         </div>
     </section>
@@ -108,8 +108,14 @@
                 <h2 class="section-title golden">【期間限定】ゲスト参加枠のご案内<br><span class="subtitle white-text">一般の皆様へ</span></h2>
                 <p class="guest-intro">通常、SC生限定で行われているこの特別な場を、今だけ期間限定で一般公開いたします。本物のSCメソッドと、高い波動の世界を体感してください。</p>
                 
-                <div class="bonus-image">
-                    <img src="tokuten.jpg" alt="説明会参加者限定特典　特典I：2.7万円割引チケットで六芒星鑑定★が3,000円に　特典II：感謝されながら豊かになる8桁収益シミュレーション　特典III：魂トレーニングで次元上昇★SCメソッド3ステップ" loading="lazy">
+                <div class="bonus-head">
+                    <h3 class="bonus-head-title">説明会参加者限定特典</h3>
+                    <p class="bonus-head-sub">～今だけの特別プレゼント～</p>
+                </div>
+                <div class="bonus-cards">
+                    <img src="tokuten1.jpg" alt="特典I：2.7万円割引チケットで六芒星鑑定★が3,000円に" loading="lazy">
+                    <img src="tokuten2.jpg" alt="特典II：感謝されながら豊かになる8桁収益シミュレーション" loading="lazy">
+                    <img src="tokuten3.jpg" alt="特典III：魂トレーニングで次元上昇★SCメソッド3ステップ" loading="lazy">
                 </div>
             </div>
         </div>
@@ -379,17 +385,64 @@
         .faq-a[hidden] {
             display: none;
         }
-        /* 説明会特典画像 */
-        .bonus-image {
-            margin: 24px auto 0;
-            max-width: 900px;
+        /* 今月のテーマ：言葉の切れ目で改行 */
+        .theme-desc .nb {
+            display: inline-block;
         }
-        .bonus-image img {
+        /* 今月のテーマ：スマホで読みやすく */
+        @media (max-width: 600px) {
+            .theme-box {
+                padding: 28px 16px;
+            }
+            .theme-title {
+                font-size: 1rem;
+            }
+            .theme-desc {
+                font-size: 1.4rem;
+                line-height: 1.5;
+                letter-spacing: 0;
+            }
+        }
+        /* 説明会特典（3枚：PCは横並び、スマホは縦並び） */
+        .bonus-head {
+            text-align: center;
+            margin: 10px 0 24px;
+        }
+        .bonus-head-title {
+            color: #e8c96a;
+            font-size: 1.8rem;
+            letter-spacing: 0.15em;
+            margin: 0 0 6px;
+        }
+        .bonus-head-sub {
+            color: #ff9ecb;
+            font-size: 1rem;
+            letter-spacing: 0.1em;
+            margin: 0;
+        }
+        .bonus-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+        .bonus-cards img {
             display: block;
             width: 100%;
             height: auto;
             border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+        @media (max-width: 700px) {
+            .bonus-head-title {
+                font-size: 1.4rem;
+                letter-spacing: 0.08em;
+            }
+            .bonus-cards {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                max-width: 340px;
+                margin: 0 auto;
+            }
         }
     </style>
 </body>
